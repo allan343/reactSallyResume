@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+    <div id="application-root"></div>
+    <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+<script type="text/babel">
+  function App(props) {
+  return (
+      <div>
+    <header>
+      <h1>Sally's resume</h1>
+     
+      </header>
+      <main>
+        <section>
+          <h1>Contact Information </h1>
+          <address>
+            <p> Click link to contact me!
+            <a href="mailto:sally@example.com">Email</a>
+            <a href="tel:+123456789">Phone</a>
+            </p>
+            <p></p>
+        </address>
+        </section>
+        <section>
+          <h1>Education</h1>
+          <p>Vancouver College 2017 to 2019 (expected)</p>
+          </section>
+          <section>
+            <h1>Employment</h1>
+           
+              <h3>
+              Canadian Revenue Agency (receptionist) Sept 2017 to Sept 2018 </h3>
+            
+              <p>
+              Responsiblities: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntu
+            </p>
+
+           
+             <h3> Canadia Post (postal worker) Sept 2016 to Sept 2017</h3>
+              
+              <p>
+              Responsiblities: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntu
+            </p>
+            </section>
+        </main>
+        </div>
+  );
+}
+
+// Nested elements inside the App
+ReactDOM.render(
+  <App />,
+  document.querySelector('#application-root')
+);
+  </script>
+
+</body>
+</html>
